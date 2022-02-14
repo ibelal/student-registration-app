@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import './App.css';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import LandingPage from './components/LandingPage';
+import { setStudents, updateCountries } from './store/action';
+import data from './data.json'
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState("dashboard")
+  
+  const studentList = data && data.students ? data.students : []
+  const countries = data && data.countries ? data.countries : []
+
+  const dispatch = useDispatch()
+  
+  dispatch(setStudents(studentList))
+  dispatch(updateCountries(countries))
+
+  const updateMenuActive = menu => {
+    setActiveMenu(menu)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className="container-fluid">
+        <div className="row">
+          <Sidebar activeMenu={activeMenu} onClickSidebar={updateMenuActive} />
+          <LandingPage onLoadComponent={activeMenu} />
+        </div>
+      </div>
     </div>
   );
 }

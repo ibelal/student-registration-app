@@ -1,0 +1,114 @@
+{
+    "countries": [
+        {
+            "code": "IN",
+            "name": "India"
+        },
+        {
+            "code": "PK",
+            "name": "Pakistan"
+        },
+        {
+            "code": "AE",
+            "name": "United Arab Emirates"
+        },
+        {
+            "code": "SA",
+            "name": "Saudia Arab"
+        },
+        {
+            "code": "UK",
+            "name": "United Kingdom"
+        },
+        {
+            "code": "US",
+            "name": "United States"
+        },
+        {
+            "code": "DE",
+            "name": "Germany"
+        },
+        {
+            "code": "AU",
+            "name": "Australia"
+        }
+    ],
+    "students": [
+        {
+            "id": 1,
+            "firstName": "Leanne",
+            "lastName": "Graham",
+            "dob": "1995-06-13",
+            "nationality": "AU",
+            "relatives": [
+                {
+                    "relativeName": "Michal Shane",
+                    "relativeType": "sibling",
+                    "relativeNationality": "AU"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "firstName": "Ervin",
+            "lastName": "Howell",
+            "dob": "1990-07-25",
+            "nationality": "US",
+            "relatives": [
+                {
+                    "relativeName": "Simon Powell",
+                    "relativeType": "sibling",
+                    "relativeNationality": "UK"
+                },
+                {
+                    "relativeName": "Jane Powell",
+                    "relativeType": "sibling",
+                    "relativeNationality": "UK"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "firstName": "Clementine",
+            "lastName": "Bauch",
+            "dob": "2000-01-10",
+            "nationality": "UK",
+            "relatives": [
+                {
+                    "relativeName": "Torsten Fournier",
+                    "relativeType": "sibling",
+                    "relativeNationality": "UK"
+                },
+                {
+                    "relativeName": "Kayla John",
+                    "relativeType": "spouse",
+                    "relativeNationality": "UK"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "firstName": "Rocio",
+            "lastName": "Lopez",
+            "dob": "1985-12-23",
+            "nationality": "DE",
+            "relatives": [
+                {
+                    "relativeName": "Vildan Topaloğlu",
+                    "relativeType": "sibling",
+                    "relativeNationality": "DE"
+                },
+                {
+                    "relativeName": "Misty Brewer",
+                    "relativeType": "spouse",
+                    "relativeNationality": "US"
+                },
+                {
+                    "relativeName": "Lotta Paavola",
+                    "relativeType": "mother",
+                    "relativeNationality": "AU"
+                }
+            ]
+        }
+    ]
+}
